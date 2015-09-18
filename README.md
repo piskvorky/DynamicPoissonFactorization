@@ -24,12 +24,12 @@ Required libraries: gsl, gslblas, pthread, openMP
 
 On Linux/Unix run
 
- `./configure;make`
+ `./configure && make`
 
 On Mac OS (untested), the location of the required gsl, gslblas, pthread,
 and openMP libraries may need to be specified:
 
- `./configure LDFLAGS="-L/opt/local/lib" CPPFLAGS="-I/opt/local/include"; make` 
+ `./configure LDFLAGS="-L/opt/local/lib" CPPFLAGS="-I/opt/local/include" && make` 
 
 The binary 'dynnormprec' will be installed in /usr/local/bin unless a
 different prefix is provided to configure. (See INSTALL.)
